@@ -1,0 +1,6 @@
+@CallBreakBackEnd_HostAddress = http://localhost:5082
+
+GET {{CallBreakBackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
