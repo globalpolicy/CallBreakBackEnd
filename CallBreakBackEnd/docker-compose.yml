@@ -1,0 +1,8 @@
+version: '3.8'  # Docker Compose file format version
+
+services:
+  callbreak-api:  # Name of the service
+    image: callbreak-api  # Name of the image
+    ports:
+      - "7211:8080"  # Map port 7211 on the host to port 8080 in the container
+    restart: unless-stopped
