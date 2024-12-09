@@ -50,7 +50,7 @@ namespace CallBreakBackEnd
 				options.AddPolicy("AllowSpecificOrigin",
 					policy =>
 					{
-						policy.WithOrigins("http://127.0.0.1:5500", "http://localhost:5500")
+						policy.WithOrigins("https://callbreak.ajashra.com") // "http://127.0.0.1:5500", "http://localhost:5500", "http://localhost"
 							  .AllowAnyMethod()
 							  .AllowAnyHeader()
 							  .AllowCredentials(); // apparently needed for SignalR
